@@ -42,10 +42,21 @@ public class Calculator {
         return answer;
     }
 
+    public void setAnswer(double answer) {
+        this.answer = answer;
+    }
+
     public void setOperator(String operator) {
         this.operator = operator;
     }
 
+    public void reset(){
+        num1 = 0;
+        num2 = 0;
+        answer = 0;
+        expression = "";
+        operator = "";
+    }
 
     public void calculate(){
         if (operator.equals("+")) {
