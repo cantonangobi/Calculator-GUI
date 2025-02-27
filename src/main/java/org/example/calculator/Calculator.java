@@ -3,7 +3,7 @@ package org.example.calculator;
 public class Calculator {
 
     private double num1, num2, answer;
-    public String operator, expression;
+    private String operator, expression;
 
 
 
@@ -12,6 +12,7 @@ public class Calculator {
         num2 = 0;
         answer = 0;
         expression = "";
+        operator="";
     }
 
     public double getNum1() {
@@ -50,6 +51,10 @@ public class Calculator {
         this.operator = operator;
     }
 
+    public String getOperator() {
+        return operator;
+    }
+
     public void reset(){
         num1 = 0;
         num2 = 0;
@@ -71,6 +76,7 @@ public class Calculator {
         else if (operator.equals("/")) {
             answer = num1 / num2;
         }
+        operator = "";
     }
 
     public String formatDouble(double num){
