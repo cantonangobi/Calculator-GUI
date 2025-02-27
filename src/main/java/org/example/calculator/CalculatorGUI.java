@@ -135,11 +135,11 @@ public class CalculatorGUI extends Application {
         mainContainer.setPadding(new Insets(2));
         mainContainer.getChildren().addAll(lblDisplayScreen,buttonContainer);
 
-        Scene scene = new Scene(mainContainer, 325,420);
+        Scene scene = new Scene(mainContainer, 300,300);
 
         window.setScene(scene);
         window.setMinWidth(325);
-        window.setMinHeight(420);
+        window.setMinHeight(405);
     }
 
     //Handling number input
